@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Grid landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Nav -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="./assets/images/favicon-32x32.png" alt="icon" class="navbar-image" />
+        <span>Bridge Collective</span>
+      </div>
+      <div class="navbar-right">
+        <button id="menu"><img src="./assets/images/icon-menu.svg" alt="menu" /></button>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero -->
+      <section>
+        <div class="hero main-panel">
+          <h1 id="classroom">A classroom</h1>
+          <h1 id="every">for every child.</h1>
+          <p>We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a
+            graduate tomorrow.</p>
+        </div>
+        <nav id="pop-menu" class="hidden">
+          <ul>
+            <li>About</li>
+            <li>Our Work</li>
+            <li>Partners</li>
+            <li>Annual Report</li>
+            <li>Donate</li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Stats -->
+
+      <div class="grid">
+        <div class="panel">
+          <div class="panel-stat">
+            <img src="./assets/images/icon-sparkle.svg" alt="sparkle" class="panel-image" />
+            <p>2.4M</p>
+          </div>
+          <p class="panel-main">Students reached</p>
+          <p class="panel-detail">Across 31 countries since 2011.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-stat">
+            <img src="./assets/images/icon-plus.svg" alt="plus" class="panel-image" />
+            <p>1,284</p>
+          </div>
+          <p class="panel-main">Schools partnered</p>
+          <p class="panel-detail">In 14 countries, from Kenya to Guatemala.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-stat">
+            <img src="./assets/images/icon-arrow-right.svg" alt="arrow" class="panel-image" />
+            <p>38K</p>
+          </div>
+          <p class="panel-main">Teachers trained</p>
+          <p class="panel-detail">Equipped with modern tools and methodology.</p>
+        </div>
+        <div class="panel">
+          <div class="panel-stat">
+            <img src="./assets/images/icon-trending-up.svg" alt="trending" class="panel-image" />
+            <p>3.1×</p>
+          </div>
+          <p class="panel-main">Graduation lift</p>
+          <p class="panel-detail">Partner schools outperform national averages 3x.</p>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="trademark">
+        <div class="ftr-left">© 2026 Bridge Collective</div>
+        <div class="ftr-right">Registered charity 12345678</div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+
+    </footer>
+    <!-- Menu panel — hidden until the hamburger is activated -->
+
+
+
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "inter-variable";
+    src: url("./assets/fonts/inter/inter-variable.ttf") format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(228, 99%, 58%);
+    font-family: "inter-variable", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    font-size: 14px;
+    height: 60px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.navbar-image {
+    width: 8px;
+    height: 8px;
+}
+
+span {
+    margin-left: 4px;
+}
+
+.navbar-right {
+    margin-right: 25px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    justify-content: center;
+   
+}
+
+h1 {
+    font-weight: 500;
+    padding: 25px;
+    
+    letter-spacing: 1.2px;
+    line-height: 1.1;
+    font-size: 42px;
+}
+
+.hero p {
+    line-height: 1.6;
+    padding: 25px;   
+    letter-spacing: 1.2px; 
+    font-weight: 200;
+    margin-right: 5px;
+}
+
+.container {
+    width: 100%;
+}
+
+.grid {
+    width: 100%;
+}
+
+.panel {
+    color: hsl(0, 0%, 100%);
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.panel:hover {
+    background-color: hsl(228, 100%, 60%);
+    cursor: pointer;
+}
+
+.panel-stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-right: 15px;
+    margin-top: 5px;
+}
+
+.panel-image {
+    width: 30px;
+    padding-left: 15px;    
+}
+
+.panel-main {
+    font-family: "inter-variable", sans-serif; 
+    font-weight: 500;
+    margin-top: 140px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+.panel-detail {
+    margin-left: 15px;
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.ftr-right {
+    margin-top: 8px;
+}
+
+.ftr-left {
+    margin-bottom: 5px;
+}
+
+
+
+button {
+    border: none;
+    background-color:hsl(228, 99%, 58%);
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+#pop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 220px;
+
+    background-color: hsl(228, 99%, 58%);
+    color: white;
+}
+
+#pop-menu ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+
+    text-align: center;
+    line-height: 1.6;
+    font-size: 30px;
+}
+
+#pop-menu.hidden,
+.hero.hidden {
+    display: none;
+}
+
+.menu-open main,
+.menu-open footer {
+    background-color: hsl(228, 65%, 45%);
+
+}
+
+@media (min-width: 769px) {
+    body {
+        margin: 0;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        position: relative;
+    }
+
+    #pop-menu:not(.hidden) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 27.5%;
+        height: calc(100% + 65px);
+
+        z-index: 10;
+    }
+
+    #pop-menu ul {
+        font-size: 26px;
+        text-align: right;
+        margin: 40px -40px 0 0;
+        padding: 0;
+
+        list-style: none;
+        line-height: 1.6;
+        font-size: 30px;
+    }
+
+    .hero.hidden {
+        display: flex;
+    }
+
+    section {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .hero {
+        min-height: 565px;
+    }
+
+    #classroom {
+        margin-right: 100px;
+    }
+
+    #every {
+        margin-top: -75px;
+    }
+
+    .hero p {
+        margin-top: -50px;
+        letter-spacing: normal;
+        margin-right: 175px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
+    }
+
+    .panel {
+        outline: 2px solid hsl(220, 100%, 64%);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .trademark {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ftr-left,
+    .ftr-right {
+        margin-top: 10px;
+    }
+    .ftr-left {
+        margin-right: 850px;
+    }
+  
+
+}
